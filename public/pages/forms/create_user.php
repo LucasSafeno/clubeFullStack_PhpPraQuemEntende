@@ -20,21 +20,13 @@ $validate = validate([
 
 $cadastrado = create('users', (array) $validate);
 
-dd($cadastrado);
 
 
+if ($cadastrado) {
+    flash('message', 'Cadastrado com sucesso', 'success');
+    return redirect('create_user');
+}
 
+flash('message', 'Erro ao cadastrar usuário');
 
-
-// $cadastrado = create('users', $validate);
-
-
-
-// if ($cadastrado) {
-//     flash('message', 'Cadastrado com sucesso', 'success');
-//     return redirect('create_user');
-// }
-
-// flash('message', 'Erro ao cadastrar usuário');
-
-// redirect('create_user');
+redirect('create_user');
