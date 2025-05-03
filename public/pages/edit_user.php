@@ -28,5 +28,6 @@ $user = find('users', 'id', $_GET['id']);
 
 
     <button type="submit" class="btn btn-primary">Edit User</button>
+    <a href="/" class="btn btn-info">Back</a>
 
 </form>
