@@ -27,6 +27,6 @@ $user = find('users', 'id', $_GET['id']);
     </div>
 
 
-    <button type="submit" class="btn btn-primary">Edit User</button:submi>
+    <button type="submit" class="btn btn-primary">Edit User</button>
 
 </form>

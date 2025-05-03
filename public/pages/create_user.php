@@ -1,5 +1,8 @@
 <?= get('message') ?>
 
+<h2 class="text-center">Register new user</h2>
+
+
 <form action="/pages/forms/create_user.php" method="POST" role="form">
     <div class="form-group">
         <label for="firstName">First name</label>
@@ -21,6 +24,7 @@
         <input type="password" name="password" id="passowrd" class="form-control">
     </div>
 
-    <button type="submit" class="btn btn-primary">Register</button:submi>
+    <button type="submit" class="btn btn-primary">Register</button>
+    <a href="/" class="btn btn-info">Back</a>
 
 </form>
